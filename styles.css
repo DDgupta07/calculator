@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #807ece 0%, #8e7ece 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  display: flex;
+  padding: 5.4rem 3.2rem 3.2rem 3.2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.6rem;
+  border-radius: 4.8rem;
+  background: #2d2a37;
+  box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.22) inset,
+    0px 6px 8px 0px rgba(255, 255, 255, 0.1) inset,
+    0px 8px 17px 0px rgba(0, 0, 0, 0.29), 0px 30px 30px 0px rgba(0, 0, 0, 0.26),
+    0px 68px 41px 0px rgba(0, 0, 0, 0.15),
+    0px 120px 48px 0px rgba(0, 0, 0, 0.04),
+    0px 188px 52px 0px rgba(0, 0, 0, 0.01), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.display {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #7f45e2;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 2rem;
+  text-align: right;
+  color: #ebebeb;
+  font-family: Rubik;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  color: #ebebeb;
+  font-family: Rubik;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: -0.48px;
+  border-radius: 999px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #2d2a37;
+  box-shadow: 0px 2px 3px 0px rgba(255, 255, 255, 0.06) inset,
+    0px 0px 2px 0px rgba(0, 0, 0, 0.29), 0px 2px 4px 0px rgba(0, 0, 0, 0.26),
+    0px 4px 6px 0px rgba(0, 0, 0, 0.1), 0px 7px 7px 0px rgba(0, 0, 0, 0.04),
+    0px 11px 7px 0px rgba(0, 0, 0, 0.01);
+  display: flex;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #7f45e2;
+  box-shadow: 0px 2px 3px 0px rgba(255, 255, 255, 0.1) inset,
+    0px 0px 2px 0px rgba(0, 0, 0, 0.29), 0px 2px 4px 0px rgba(0, 0, 0, 0.26),
+    0px 4px 6px 0px rgba(0, 0, 0, 0.1), 0px 7px 7px 0px rgba(0, 0, 0, 0.04),
+    0px 11px 7px 0px rgba(0, 0, 0, 0.01);
+}
+.btn {
+  height: 64px;
+  width: 64px;
+}
+.action {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0.01%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #462878;
+  box-shadow: 0px 2px 3px 0px rgba(255, 255, 255, 0.1) inset,
+    0px 0px 2px 0px rgba(0, 0, 0, 0.29), 0px 2px 4px 0px rgba(0, 0, 0, 0.26),
+    0px 4px 6px 0px rgba(0, 0, 0, 0.1), 0px 7px 7px 0px rgba(0, 0, 0, 0.04),
+    0px 11px 7px 0px rgba(0, 0, 0, 0.01);
+}
+
+@media (max-width: 370px) {
+  .calculator {
+    width: 200px;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    width: 52px;
+  }
+  #btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    width: 52px;
+  }
+}
+@media (max-width: 280px) {
+  .calculator {
+    width: 150px;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 42px;
+  }
+  #btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 42px;
+  }
+}
